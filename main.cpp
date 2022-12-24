@@ -136,7 +136,7 @@ int main() {
       {"1000-copy.png", "1000-orig.png"},
   };
 
-  std::string folder = "../data/comparison/lamp/";
+  std::string folder = "../data/comparison/punk/small/";
 
   for (int i = 0; i < images.size(); i++) {
     std::vector<std::string> imgPair = images[i];

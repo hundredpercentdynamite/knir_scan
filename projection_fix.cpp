@@ -24,7 +24,7 @@ int main() {
 //      {"500-copy.png", "500-orig.png"},
       {"1000-copy.png", "1000-orig.png"},
   };
-  std::vector<cv::Point2f> standardPerspective{ cv::Point2f(0.0f, 0.0f), cv::Point2f(500.0f, 0.0f), cv::Point2f(500.0f, 220.0f), cv::Point2f(0.0f, 220.0f) };
+  std::vector<cv::Point2f> standardPerspective{ cv::Point2f(0.0f, 0.0f), cv::Point2f(250.0f, 0.0f), cv::Point2f(250.0f, 110.0f), cv::Point2f(0.0f, 110.0f) };
   cv::FileStorage contours = cv::FileStorage(IMAGE_FOLDER + JSON_NAME, cv::FileStorage::Mode::READ);
 
   cv::namedWindow("copy");
@@ -41,7 +41,7 @@ int main() {
     cv::Mat copyTransformMatrix = cv::getPerspectiveTransform(copyContour, standardPerspective);
     cv::Mat origTransformMatrix = cv::getPerspectiveTransform(origContour, standardPerspective);
 
-    cv::Size imgSize(500, 220);
+    cv::Size imgSize(250, 110);
     cv::Mat copyDst;
     cv::Mat origDst;
     cv::warpPerspective(copyImg, copyDst, copyTransformMatrix, imgSize);
