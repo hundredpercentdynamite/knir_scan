@@ -1,0 +1,52 @@
+{
+  "1000-copy.png": {
+    "filename": "1000-copy.png",
+    "size": 2367332,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "polygon",
+          "all_points_x": [
+            264,
+            1041,
+            1043,
+            259
+          ],
+          "all_points_y": [
+            382,
+            379,
+            723,
+            734
+          ]
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "1000-orig.png": {
+    "filename": "1000-orig.png",
+    "size": 2344297,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "polygon",
+          "all_points_x": [
+            223,
+            1055,
+            1061,
+            224
+          ],
+          "all_points_y": [
+            296,
+            286,
+            648,
+            662
+          ]
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  }
+}
